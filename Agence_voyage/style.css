@@ -1,0 +1,43 @@
+/* Couleur principale pour le branding de l'agence */
+.navbar-brand span {
+  color: #0d6efd; /* bleu Bootstrap */
+  font-weight: 700;
+}
+
+/* Section héro avec image de fond */
+.hero {
+  min-height: 70vh;
+  background-image: url("/images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer */
+footer {
+  background: #0b1726;
+  color: #ccc;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
